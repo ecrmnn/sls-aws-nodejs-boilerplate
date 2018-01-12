@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "test": "npm run mocha && npm run eslint",
+    "mocha": "node_modules/.bin/mocha test/tests.js",
+    "eslint": "node_modules/.bin/eslint src/ test/"
+  },
+  "author": {
+    "name": "Daniel Eckermann",
+    "email": "danieleckermann@gmail.com",
+    "url": "http://danieleckermann.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "js-yaml": "^3.10.0",
+    "mocha": "^4.1.0"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "dotenv": "^4.0.0"
+  }
+}
