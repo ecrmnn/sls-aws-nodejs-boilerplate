@@ -1,6 +1,7 @@
 # sls-aws-nodejs-boilerplate
 > Boilerplate for building small serverless functions on AWS
 
+[![Travis](https://img.shields.io/travis/ecrmnn/sls-aws-nodejs-boilerplate/master.svg?style=flat-square)](https://travis-ci.org/ecrmnn/sls-aws-nodejs-boilerplate/builds)
 [![prs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![eslint](https://img.shields.io/badge/code_style-airbnb-blue.svg?style=flat-square)](https://github.com/airbnb/javascript)
 
