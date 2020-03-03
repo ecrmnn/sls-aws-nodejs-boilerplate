@@ -1,12 +1,11 @@
 'use strict';
 
-const { describe } = require('mocha');
+const { describe, it } = require('mocha');
 const { expect } = require('chai');
-const it = require('./helpers/it');
 const invoke = require('./helpers/invoke');
 
 describe('SLS AWS Node.js Boilerplate Test Suite', () => {
-  it('should message', function* test() {
-    expect(yield invoke()).to.eql('{"message":"UNICORN"}');
+  it('should message', async () => {
+    expect(await invoke()).to.eql('{"message":"UNICORN"}');
   });
 });

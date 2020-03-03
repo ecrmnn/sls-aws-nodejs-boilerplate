@@ -1,12 +1,11 @@
 'use strict';
 
-const co = require('co');
 const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 const app = require('../../src/app');
 
-module.exports = co.wrap(function* invoke(functionName = 'handler', event = {}, context = {}) {
+module.exports = async (functionName = 'handler', event = {}, context = {}) => {
   /**
    * Inject serverless environment variables into process
    */
@@ -19,7 +18,7 @@ module.exports = co.wrap(function* invoke(functionName = 'handler', event = {}, 
     output = response;
   };
 
-  yield app[functionName](event, context, callback);
+  await app[functionName](event, context, callback);
 
   return output.body;
-});
+};
