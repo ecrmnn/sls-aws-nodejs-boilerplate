@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "npm run mocha && npm run eslint",
+    "test": "npm run mocha",
     "mocha": "node_modules/.bin/mocha test/tests.js",
     "eslint": "node_modules/.bin/eslint src/ test/"
   },
@@ -16,9 +16,12 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.20.1",
     "js-yaml": "^3.13.1",
-    "mocha": "^4.1.0"
+    "mocha": "^4.1.0",
+    "serverless": "^3.30.1"
   },
   "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
     "dotenv": "^8.2.0"
   }
 }
